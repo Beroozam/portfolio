@@ -1,6 +1,3 @@
-// import React , { useEffect , useState } from 'react'
-import image from '/static/javascrip-logo.png'
-import Image from 'next/image'
 import Layout from '../components/Layout'
 import Error from './404'
 
@@ -15,6 +12,11 @@ const About = (props) => {
     <Layout title="About">
       <p>{user.name}</p>
       <img src={user.avatar_url} alt={user.login} width="200px"/>
+      <style>{`
+        img{
+          border-radius:5px;
+        }
+      `}</style>
     </Layout>
   )
 }
