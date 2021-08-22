@@ -20,7 +20,7 @@ const About = (props) => {
 }
 
 About.getInitialProps = async () => {
-  const res = await fetch('https://api.github.com/users/reedbarger')
+  const res = await fetch('https://api.github.com/users/Beroozam')
   const statusCode = res.status > 200 ? res.status : false
   const json = await res.json()
   return { user: json , statusCode}
