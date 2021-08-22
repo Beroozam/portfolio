@@ -1,7 +1,5 @@
 import Layout from "../components/Layout"
 
-Layout
-
 function custom404({ status }){
   return(
     <Layout title="Error!!!">
